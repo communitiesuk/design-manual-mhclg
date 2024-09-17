@@ -4,3 +4,40 @@
 // 
 
 // Add extra styles here
+
+$govuk-font-family: "Helvetica Neue", arial, sans-serif;
+$govuk-brand-colour: #00625e;
+$govuk-link-colour: #00625e;
+$govuk-link-visited-colour: #00625e;
+
+  .app-header--no-border {
+	border-bottom: 0;
+  }
+
+.x-govuk-masthead {
+	background-color: $govuk-brand-colour;
+}
+
+
+a:visited, .govuk-link:visited {
+	color: $govuk-link-visited-colour	
+}
+
+a:link, .govuk-link:link {
+	color: $govuk-link-visited-colour	
+}
+
+
+.govuk-service-navigation__link:not(:hover):not(:focus) {
+	color: $govuk-link-visited-colour	
+}
+
+.govuk-service-navigation__link:visited {
+	color: $govuk-link-visited-colour	
+}
+
+.govuk-service-navigation__item, .govuk-service-navigation__service-name {
+
+	border-color: $govuk-link-visited-colour	
+}
+
