@@ -83,13 +83,19 @@ $govuk-input-border-colour:	#0b0c0c;
 	background-color: $govuk-brand-colour;
 }
 
-
-
-
- .app-header--no-border {
+.govuk-header {
 	border-bottom: 0;
+ }
+  
+  .govuk-header__container {
+  	border-bottom: 10px solid $govuk-brand-colour;
   }
-
+  
+  .app-header--no-border {
+	border-bottom: 0;
+	
+	  
+  }
 
 
 a:visited, .govuk-link:visited {
