@@ -7,11 +7,14 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 
 {% block header %}
 
-{{ govukHeader({
+
+ {{ govukHeader({
+	homepageUrl: "/",
+	classes: "",
+	serviceName: serviceName,
+	serviceUrl: "/",           	
 	classes: "app-header–no-border"
 }) }}
-
-
 
 
 {{ xGovukMasthead({  
@@ -21,7 +24,11 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
   },
   description: {
 	text: "Standards, guidance and resources for anyone working  on digital services and communications at the Ministry of Housing, Communities and Local Government."
+  },
+  image: {
+	  src: "/public/images/MHCLG_WHITE_MASTER_AW.png"
   }
+  
   
 }) }}
 
