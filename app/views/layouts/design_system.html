@@ -105,8 +105,30 @@
 						<div class="govuk-grid-column-two-thirds">        
 							<h2 class="govuk-heading-l govuk-!-margin-bottom-3">Design System</h2>        
 							<p>The MHCLG style guide includes words used across multiple teams and services that are not included in the GDS style guide.</p>            
+							
+							
+							{{ xGovukSecondaryNavigation({
+							  visuallyHiddenTitle: "Secondary menu",
+							  items: [{
+								text: "Colour palette",
+								href: "/design-system/",
+								current: true
+							  }, 
+							  {
+								text: "Logo",
+								href: "/design-system/logo"
+							  }, 
+							  {
+								text: "Typography",
+								href: "/design-system/typography"
+							  }]
+							}) }}
 						</div>    
+						
+						
 					</div>
+					
+					
 		  
 			  </div>                     
 		</div>

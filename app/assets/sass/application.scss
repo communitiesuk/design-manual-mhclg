@@ -258,3 +258,31 @@ $colour-list-breakpoint: 980px;
 	width: 15%;
   }
 }
+
+
+
+.x-govuk-secondary-navigation__list-item--current {
+	border-bottom-color: $govuk-brand-colour;
+}
+
+.x-govuk-secondary-navigation__link:link {
+	color: $govuk-brand-colour;
+}
+
+.x-govuk-secondary-navigation__link:visited {
+	color: $govuk-link-visited-colour	
+}
+
+
+
+.x-govuk-secondary-navigation__link:not(:hover):not(:focus) {
+	color: $govuk-link-visited-colour	
+}
+
+.x-govuk-secondary-navigation__link:visited {
+	color: $govuk-link-visited-colour	
+}
+
+	.x-govuk-masthead {
+		padding-bottom: 0px;
+	}
