@@ -1,29 +1,94 @@
 {% extends "layouts/tools.html" %}
 
-{% set pageName="Home" %}
+{% set pageName="Tools" %}
 
 {% block content %}
 
-
-
-
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">    
-
-    <!-- <h1 class="govuk-heading-xl">Tools</h1>
-    <p class="govuk-body">Standards, guidance, and principles for the design of digital services in the Ministry of Housing, Communities and Local Government.
-
-
-    <p class="govuk-body"><a class="govuk-link" href="www.bbc.co.uk" >Testing links</a></p> -->
-
-
-
-{% include "/includes/wip.html"  %}
- 
-
-
-</div>
-
+    <div class="govuk-grid-column-two-thirds">
+        
+        <h2 class="govuk-heading-m">Design</h2>
+        
+        {{ govukSummaryList({
+            rows: [
+                {
+                    key: { text: "Heroku" },
+                    value: { text: "Prototype hosting" },
+                    actions: {
+                    items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
+                },
+                {
+                    key: { text: "Figma" },
+                    value: { text: "Prototyping, workshop boards, diagrams, and wireframing" },
+                    actions: {
+                    items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
+                },
+                {
+                    key: { text: "VS Code" },
+                    value: { text: "IDE for code development" },
+                    actions: {
+                    items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
+                }
+            ]
+        }) }}
+        
+        
+        
+        <h2 class="govuk-heading-m">Work and tasks</h2>
+        
+        {{ govukSummaryList({
+            rows: [
+                {
+                    key: { text: "Confluence" },
+                    value: { text: "Cloud service for documentation alongside Jira" },
+                    actions: {
+                    items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
+                },
+                {
+                    key: { text: "Jira" },
+                    value: { text: "    Cloud service for managing projects and tracking work" },
+                    actions: {
+                    items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
+                },
+                {
+                    key: { text: "Trello" },
+                    value: { text: "Task and work management" },
+                    actions: {
+                    items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
+                }
+            ]
+        }) }}
+        
+        
+        
+        <h2 class="govuk-heading-m">Collaboration and communication</h2>        
+        {{ govukSummaryList({
+            rows: [
+                {
+                    key: { text: "Slack" },
+                    value: { text: "Messaging and discussion channels" },
+                    actions: {
+                    items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
+                },                
+                {
+                    key: { text: "Mural" },
+                    value: { text: "Secure, flexible, visual work platform purpose-built for collaboration" },
+                    actions: {
+                    items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
+                }
+            ]
+        }) }}
+        
+        
+    
+        
+        
+  </div>
+          <div class="govuk-grid-column-one-third">    
+           
+             {% include "/includes/wip.html"  %}
+           </div>
+          </div>
 
 
 {% endblock %}
