@@ -69,14 +69,14 @@ $govuk-input-border-colour:	#0b0c0c;
 .govuk-tabs__tab,
 .govuk-task-list,
 .govuk-warning-text, {
-	font-family: "Helvetica Neue", Arial, sans-serif;
+	// font-family: "Helvetica Neue", Arial, sans-serif;
 }
 
 // X-Gov Component
 .x-govuk-masthead__title,
 .x-govuk-masthead__description,
 .govuk-service-navigation__link {
-	font-family: "Helvetica Neue", Arial, sans-serif;	
+	// font-family: "Helvetica Neue", Arial, sans-serif;	
 }
 
 .x-govuk-masthead {
@@ -85,18 +85,15 @@ $govuk-input-border-colour:	#0b0c0c;
 
 .govuk-header {
 	border-bottom: 0;
- }
-  
-  .govuk-header__container {
-  	border-bottom: 10px solid $govuk-brand-colour;
-  }
-  
-  .app-header--no-border {
-	border-bottom: 0;
-	
-	  
-  }
+}  
 
+.govuk-header__container {
+ 	border-bottom: 10px solid $govuk-brand-colour;
+}
+  
+.app-header--no-border {
+	border-bottom: 0;	  
+}
 
 a:visited, .govuk-link:visited {
 	color: $govuk-link-visited-colour	
@@ -105,7 +102,6 @@ a:visited, .govuk-link:visited {
 a:link, .govuk-link:link {
 	color: $govuk-link-visited-colour	
 }
-
 
 .govuk-service-navigation__link:not(:hover):not(:focus) {
 	color: $govuk-link-visited-colour	
