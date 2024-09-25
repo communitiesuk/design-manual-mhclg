@@ -7,25 +7,28 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
         
-        <h2 class="govuk-heading-m">Design</h2>
+        
+        
+        
+        <h2 class="govuk-heading-m">Work and tasks</h2>
         
         {{ govukSummaryList({
             rows: [
                 {
-                    key: { text: "Heroku" },
-                    value: { text: "Prototype hosting" },
+                    key: { text: "Confluence" },
+                    value: { text: "Cloud service for documentation alongside Jira" },
                     actions: {
                     items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
                 },
                 {
-                    key: { text: "Figma" },
-                    value: { text: "Prototyping, workshop boards, diagrams, and wireframing" },
+                    key: { text: "Jira" },
+                    value: { text: "    Cloud service for managing projects and tracking work" },
                     actions: {
                     items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
                 },
                 {
-                    key: { text: "VS Code" },
-                    value: { text: "IDE for code development" },
+                    key: { text: "Trello" },
+                    value: { text: "Task and work management" },
                     actions: {
                     items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
                 }
@@ -33,8 +36,7 @@
         }) }}
         
         
-        
-      
+       
         
     {% include "/includes/wip.html"  %}
         

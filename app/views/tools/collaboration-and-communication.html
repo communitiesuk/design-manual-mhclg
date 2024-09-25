@@ -7,34 +7,27 @@
 <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
         
-        <h2 class="govuk-heading-m">Design</h2>
+ 
         
+        
+        <h2 class="govuk-heading-m">Collaboration and communication</h2>        
         {{ govukSummaryList({
             rows: [
                 {
-                    key: { text: "Heroku" },
-                    value: { text: "Prototype hosting" },
+                    key: { text: "Slack" },
+                    value: { text: "Messaging and discussion channels" },
                     actions: {
                     items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
-                },
+                },                
                 {
-                    key: { text: "Figma" },
-                    value: { text: "Prototyping, workshop boards, diagrams, and wireframing" },
-                    actions: {
-                    items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
-                },
-                {
-                    key: { text: "VS Code" },
-                    value: { text: "IDE for code development" },
+                    key: { text: "Mural" },
+                    value: { text: "Secure, flexible, visual work platform purpose-built for collaboration" },
                     actions: {
                     items: [ { href: "#", text: "View", visuallyHiddenText: "name" } ] }
                 }
             ]
         }) }}
         
-        
-        
-      
         
     {% include "/includes/wip.html"  %}
         

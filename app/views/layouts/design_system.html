@@ -2,142 +2,69 @@
 
 {% block header %}
 
-
- <!-- {{ govukHeader({
-	homepageUrl: "/",
-	classes: "",
-	serviceName: serviceName,
-	serviceUrl: "/",           	
-	classes: "app-header–no-border"
-}) }} -->
-
 <header class="govuk-header app-header--no-border" data-module="govuk-header">
-  <div class="govuk-header__container govuk-width-container">
-	<div class="govuk-header__logo">
-	  <a href="/" class="govuk-header__link govuk-header__link--homepage">
-		<img src="/public/images/MHCLG_WHITE_LANDSCP_AW.png" height="30px">
-		
-	  </a>
+	<div class="govuk-header__container govuk-width-container">
+		<div class="govuk-header__logo">
+	    	<a href="/" class="govuk-header__link govuk-header__link--homepage"><img src="/public/images/MHCLG_WHITE_LANDSCP_AW.png" height="30px"></a>
+		</div>
 	</div>
-  </div>
 </header>
 
-
-<!-- <div class="x-govuk-masthead x-govuk-masthead--large">
-  <div class="govuk-width-container">
-	<div class="govuk-grid-row">
-	  <div class="govuk-grid-column-two-thirds-from-desktop">
-		<h1 class="x-govuk-masthead__title">
-		  Design your service using GOV.UK styles, components and patterns
-		</h1>
-		<p class="x-govuk-masthead__description">
-		  Use this design system to make your service consistent with GOV.UK. Learn from the research and experience of other service teams and avoid repeating work that’s already been done.
-		</p>
-		<a href="#" role="button" draggable="false" class="govuk-button govuk-button--inverse govuk-button--start" data-module="govuk-button">
-		  Get started
-		  <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
-			<path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
-		  </svg>
-		</a>
-	  </div>
-	</div>
-  </div>
-</div> -->
-
-
-
 {{ xGovukMasthead({  
-  classes: "x-govuk-masthead–large",  
-  title: {
-	text: "Design manual"
-  },
-  description: {
-	text: "Standards, guidance and resources for anyone working  on digital services and communications at the Ministry of Housing, Communities and Local Government."
-  },
-  image: {
-		src: "/public/images/manual_design.png"
-	}
-  
-  
-  
-  
+	classes: "x-govuk-masthead–large",  
+    title: { text: "Design manual" },
+    description: { text: "Standards, guidance and resources for anyone working on digital services and communications at the Ministry of Housing, Communities and Local Government." },
+    image: { src: "/public/images/manual_design.png" }
 }) }}
-
 
 {{ govukServiceNavigation({
   navigation: [
-	{
-	  href: "/",
-	  text: "Home"	  
-	},
-	{
-	  href: "/standards/",
-	  text: "Standards"
-	  
-	},
-	{
-	  href: "/design-system/",
-	  text: "Design System",
-	  active: true
-	},
-	{
-	  href: "/design-history/",
-	  text: "Design history"	  
-	},
-	{
-	  href: "/community/",
-	  text: "Community"	  
-	},
-	{
-	  href: "/our-services/",
-	  text: "Our services"	  
-	},
-	{
-	  href: "/tools/",
-	  text: "Tools"
-	}
+	{ href: "/", text: "Home" },
+	{ href: "/standards/", text: "Standards" },
+	{ href: "/design-system/", text: "Design System", active: true },
+	{ href: "/design-history/", text: "Design history" },
+	{ href: "/community/", text: "Community"	},
+	{ href: "/our-services/", text: "Our services" },
+	{ href: "/tools/", text: "Tools" }
   ]
 }) }}
 
 <div class="x-govuk-masthead x-govuk-masthead--large grey">
-	<div class="govuk-width-container">
-		
+	<div class="govuk-width-container">		
 		<div class="govuk-grid-row">
-			<div class="govuk-grid-column-full">
-					
-					<div class="govuk-grid-row govuk-!-padding-top-7 grey">
-						<div class="govuk-grid-column-two-thirds">        
-							<h2 class="govuk-heading-l govuk-!-margin-bottom-3">Design System</h2>        
-							<p>The MHCLG style guide includes words used across multiple teams and services that are not included in the GDS style guide.</p>            
-							
-							
-							{{ xGovukSecondaryNavigation({
-							  visuallyHiddenTitle: "Secondary menu",
-							  items: [{
-								text: "Colour palette",
-								href: "/design-system/",
-								current: true
-							  }, 
-							  {
-								text: "Logo",
-								href: "/design-system/logo"
-							  }, 
-							  {
-								text: "Typography",
-								href: "/design-system/typography"
-							  }]
-							}) }}
-						</div>    
-						
-						
-					</div>
-					
-					
-		  
-			  </div>                     
-		</div>
-		
-	  
+			<div class="govuk-grid-column-full">					
+				<div class="govuk-grid-row govuk-!-padding-top-5 grey">
+					<div class="govuk-grid-column-two-thirds">        
+						<h2 class="govuk-heading-l govuk-!-margin-bottom-5">Design System</h2>         
+						<p class="govuk-body govuk-!-margin-bottom-5">The MHCLG style guide includes words used across multiple teams and services that are not included in the GDS style guide.</p>             											
+					</div>    						
+				</div>					
+			</div>                     
+		</div>			  
+	</div>
+</div>
+
+<div class="x-govuk-masthead x-govuk-masthead--large">
+	<div class="govuk-width-container">	
+
+
+		{{ xGovukSecondaryNavigation({
+  visuallyHiddenTitle: "Secondary menu",
+  items: [{
+	text: "Colour palette",
+	href: "/design-system/",
+	current: true
+  }, 
+  {
+	text: "Logo",
+	href: "/design-system/logo"
+  }, 
+  {
+	text: "Typography",
+	href: "/design-system/typography"
+  }]
+}) }}
+
 	</div>
 </div>
 
