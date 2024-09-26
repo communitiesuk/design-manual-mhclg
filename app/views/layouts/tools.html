@@ -49,21 +49,21 @@
 
 
 		{{ xGovukSecondaryNavigation({
-  visuallyHiddenTitle: "Secondary menu",
-  items: [{
-	text: "Design",
-	href: "/tools/",
-	current: true
-  }, 
-  {
-	text: "Work and tasks",
-	href: "/tools/work-tasks"
-  }, 
-  {
-	text: "Collaboration and communication",
-	href: "/tools/collaboration-and-communication"
-  }]
-}) }}
+  	  		visuallyHiddenTitle: "Secondary menu",
+  			items: [
+			  { text: "Design", href: "/tools/", current: { text: "true" if selected == "tools" else " " }  }, 
+			  { text: "Work and tasks", href: "/tools/work-tasks", current: { text: "true" if selected == "work" else " " }  }, 
+			  { text: "Collaboration and communication", href: "/tools/collaboration-and-communication",  current: { text: "true" if selected == "collab" }  }
+			]
+		}) }}
+		
+		
+
+
+		
+
+
+
 
 	</div>
 </div>
