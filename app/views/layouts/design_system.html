@@ -48,7 +48,7 @@
 	<div class="govuk-width-container">	
 
 
-		{{ xGovukSecondaryNavigation({
+		<!-- {{ xGovukSecondaryNavigation({
   visuallyHiddenTitle: "Secondary menu",
   items: [{
 	text: "Colour palette",
@@ -63,7 +63,30 @@
 	text: "Typography",
 	href: "/design-system/typography"
   }]
-}) }}
+}) }} -->
+
+<nav class="x-govuk-secondary-navigation" aria-label="Secondary menu">
+  <ul class="x-govuk-secondary-navigation__list">
+	<li class="x-govuk-secondary-navigation__list-item {{ "x-govuk-secondary-navigation__list-item--current" if selected=="palette" }} ">
+	  <a class="x-govuk-secondary-navigation__link" href="/design-system/" aria-current=page>
+		Colour palette
+	  </a>
+	</li>
+	<li class="x-govuk-secondary-navigation__list-item {{ "x-govuk-secondary-navigation__list-item--current" if selected=="logo" }} ">
+	  <a class="x-govuk-secondary-navigation__link" href="/design-system/logo">
+		Logo
+	  </a>
+	</li>
+	<li class="x-govuk-secondary-navigation__list-item {{ "x-govuk-secondary-navigation__list-item--current" if selected=="typography" }}">
+	  <a class="x-govuk-secondary-navigation__link" href="/design-system/typography">
+		Typography
+	  </a>
+	</li>
+	
+  </ul>
+</nav>
+
+
 
 	</div>
 </div>

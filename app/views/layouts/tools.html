@@ -48,19 +48,39 @@
 	<div class="govuk-width-container">	
 
 
-		{{ xGovukSecondaryNavigation({
+		<!-- {{ xGovukSecondaryNavigation({
   	  		visuallyHiddenTitle: "Secondary menu",
   			items: [
-			  { text: "Design", href: "/tools/", current: { text: "true" if selected == "tools" else " " }  }, 
+			  { text: "Design", href: "/tools/", current: { text: "true" if data['selected'] == "tools" else " " }  }, 
 			  { text: "Work and tasks", href: "/tools/work-tasks", current: { text: "true" if selected == "work" else " " }  }, 
 			  { text: "Collaboration and communication", href: "/tools/collaboration-and-communication",  current: { text: "true" if selected == "collab" }  }
 			]
-		}) }}
+		}) }} -->
+		
+		
+		<nav class="x-govuk-secondary-navigation" aria-label="Secondary menu">
+		  <ul class="x-govuk-secondary-navigation__list">
+			<li class="x-govuk-secondary-navigation__list-item {{ "x-govuk-secondary-navigation__list-item--current" if selected=="tools" }} ">
+			  <a class="x-govuk-secondary-navigation__link" href="/tools/" aria-current=page>
+				Design
+			  </a>
+			</li>
+			<li class="x-govuk-secondary-navigation__list-item {{ "x-govuk-secondary-navigation__list-item--current" if selected=="work" }} ">
+			  <a class="x-govuk-secondary-navigation__link" href="/tools/work-tasks">
+				Work and tasks
+			  </a>
+			</li>
+			<li class="x-govuk-secondary-navigation__list-item {{ "x-govuk-secondary-navigation__list-item--current" if selected=="collab" }}">
+			  <a class="x-govuk-secondary-navigation__link" href="/tools/collaboration-and-communication">
+				Collaboration and communication
+			  </a>
+			</li>
+			
+		  </ul>
+		</nav>
 		
 		
 
-
-		
 
 
 
