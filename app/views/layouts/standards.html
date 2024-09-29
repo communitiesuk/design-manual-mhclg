@@ -44,34 +44,21 @@
 	</div>
 </div>
 
+
 <div class="x-govuk-masthead x-govuk-masthead--large">
 	<div class="govuk-width-container">	
 
-
-		{{ xGovukSecondaryNavigation({
-  visuallyHiddenTitle: "Secondary menu",
-  items: [{
-	text: "Content design",
-	href: "/standards/",
-	current: true
-  }, 
-  {
-	text: "Design",
-	href: "/standards/design"
-  },
-  {
-	  text: "User research",
-	  href: "/standards/user-research"
-	}, 
-  {
-	text: "Keep up to date",
-	href: "/standards/up-to-date"
-  }]
-}) }}
+		<nav class="x-govuk-secondary-navigation" aria-label="Secondary menu">
+			<ul class="x-govuk-secondary-navigation__list">
+				<li class="x-govuk-secondary-navigation__list-item {{ "x-govuk-secondary-navigation__list-item--current" if selected=="content" }} "><a class="x-govuk-secondary-navigation__link" href="/standards/" aria-current=page>Content design</a></li>
+				<li class="x-govuk-secondary-navigation__list-item {{ "x-govuk-secondary-navigation__list-item--current" if selected=="design" }} "><a class="x-govuk-secondary-navigation__link" href="/standards/design">Design</a></li>
+				<li class="x-govuk-secondary-navigation__list-item {{ "x-govuk-secondary-navigation__list-item--current" if selected=="userresearch" }}"><a class="x-govuk-secondary-navigation__link" href="/standards/user-research">User research</a></li>
+				<li class="x-govuk-secondary-navigation__list-item {{ "x-govuk-secondary-navigation__list-item--current" if selected=="keep" }}"><a class="x-govuk-secondary-navigation__link" href="/standards/up-to-date">Keep up to date</a></li>	
+			</ul>
+		</nav>
 
 	</div>
 </div>
 
+
 {% endblock %}
-
-
